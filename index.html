@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="level-selection">
+    <h1>Select  Level</h1>
+    <button class="level" data-level="easy">Easy</button>
+    <button class="level" data-level="medium">Medium</button>
+    <button class="level" data-level="hard">Hard</button>
+  </div>
+
+  <div id="typing-test" class="hidden">
+    <h2>Typing Test</h2>
+    <div id="text-display"></div>
+    <textarea id="text-input" disabled placeholder="Start typing to begin..."></textarea>
+    <button id="startTyping" class="hidden">Start Typing</button>
+    <button id="submitResults" class="hidden">Submit</button>
+    <div id="timer">Time: 0:00</div>
+    <div id="wpm">WPM: 0</div>
+    <div id="accuracy">Accuracy: 100%</div>
+    <div id="progress-bar"><span></span></div>
+  </div>
+
+  <div id="results" class="hidden">
+    <h2>Test Results</h2>
+    <p>Your Final WPM: <span id="final-wpm"></span></p>
+    <p>Your Final Accuracy: <span id="final-accuracy"></span></p>
+    <p>Correct Percentage: <span id="correct-percentage"></span></p>
+    <p>Error Percentage: <span id="error-percentage"></span></p>
+    <button id="retryTest">Retry Test</button>
+    <button id="returnToLevels">Back to Levels</button>
+  </div>
+
+  <button id="backButton">Back</button>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="darkModeToggle"> Dark Mode</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
